@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="86489" started-at="2015-05-13T18:35:10Z" finished-at="2015-05-13T18:36:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="86489" started-at="2015-05-13T18:35:10Z" finished-at="2015-05-13T18:36:37Z">
+      <class name="fofTesting.FofTesting">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fofTesting.FofTesting@a9e23aa]" name="setUp" is-config="true" duration-ms="6905" started-at="2015-05-13T13:35:10Z" finished-at="2015-05-13T13:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loadPage()[pri:0, instance:fofTesting.FofTesting@a9e23aa]" name="loadPage" duration-ms="1808" started-at="2015-05-13T13:35:17Z" finished-at="2015-05-13T13:35:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPage -->
+        <test-method status="PASS" signature="dismissBrowserWarning()[pri:0, instance:fofTesting.FofTesting@a9e23aa]" name="dismissBrowserWarning" duration-ms="561" started-at="2015-05-13T13:35:19Z" depends-on-methods="fofTesting.FofTesting.loadPage" finished-at="2015-05-13T13:35:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dismissBrowserWarning -->
+        <test-method status="PASS" signature="startSinglePlayerGame()[pri:0, instance:fofTesting.FofTesting@a9e23aa]" name="startSinglePlayerGame" duration-ms="6381" started-at="2015-05-13T13:35:20Z" depends-on-methods="fofTesting.FofTesting.dismissBrowserWarning" finished-at="2015-05-13T13:35:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSinglePlayerGame -->
+        <test-method status="PASS" signature="switchToPlayerPage()[pri:0, instance:fofTesting.FofTesting@a9e23aa]" name="switchToPlayerPage" duration-ms="5594" started-at="2015-05-13T13:35:26Z" depends-on-methods="fofTesting.FofTesting.startSinglePlayerGame" finished-at="2015-05-13T13:35:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchToPlayerPage -->
+        <test-method status="PASS" signature="playSinglePlayer()[pri:0, instance:fofTesting.FofTesting@a9e23aa]" name="playSinglePlayer" duration-ms="54419" started-at="2015-05-13T13:35:32Z" depends-on-methods="fofTesting.FofTesting.switchToPlayerPage" finished-at="2015-05-13T13:36:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playSinglePlayer -->
+        <test-method status="FAIL" signature="closeAndCleanUpGames()[pri:0, instance:fofTesting.FofTesting@a9e23aa]" name="closeAndCleanUpGames" duration-ms="10777" started-at="2015-05-13T13:36:26Z" depends-on-methods="fofTesting.FofTesting.playSinglePlayer" finished-at="2015-05-13T13:36:37Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"FOF-moderator-end-game-button"}
+Command duration or timeout: 10.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'swangen.local', ip: '25.79.36.232', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.7.0_40'
+*** Element info: {Using=id, value=FOF-moderator-end-game-button}
+Session ID: f845b602-46cb-654c-abc9-8d2e9fc5cfa0
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"FOF-moderator-end-game-button"}
+Command duration or timeout: 10.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'swangen.local', ip: '25.79.36.232', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.7.0_40'
+*** Element info: {Using=id, value=FOF-moderator-end-game-button}
+Session ID: f845b602-46cb-654c-abc9-8d2e9fc5cfa0
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at fofTesting.FofTesting.closeAndCleanUpGames(FofTesting.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"FOF-moderator-end-game-button"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'swangen.local', ip: '25.79.36.232', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.7.0_40'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/2x/tpn_czq90xx7tw_m5b1663rr0000gn/T/anonymous3520077337040607287webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///var/folders/2x/tpn_czq90xx7tw_m5b1663rr0000gn/T/anonymous3520077337040607287webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAndCleanUpGames -->
+      </class> <!-- fofTesting.FofTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
